@@ -1,0 +1,11 @@
+ul {
+    list-style: none;
+}
+
+#readyToEat {
+    text-align: left !important;
+}
+
+textarea {
+    width: 300px;
+}

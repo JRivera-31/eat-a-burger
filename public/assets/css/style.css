@@ -4,6 +4,7 @@ ul {
 
 #readyToEat {
     text-align: left !important;
+    width: 400px;
 }
 
 input {
@@ -12,4 +13,5 @@ input {
 
 #devoured {
     text-align: right !important;
+    width: 400px;
 }

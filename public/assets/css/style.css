@@ -9,3 +9,7 @@ ul {
 input {
     width: 300px;
 }
+
+#devoured {
+    text-align: right !important;
+}

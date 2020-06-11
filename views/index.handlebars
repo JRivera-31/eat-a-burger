@@ -4,15 +4,29 @@
 <img src="burger.png" alt="burger" style="height: 250px; width:300px;">
 
 <ul>
-    {{#each burgers}}
-    <li>
+  {{#each burgers}}
+    {{#unless devoured}}
+      <li>
         <p class="text-danger font-weight-bold" id="readyToEat">
-        {{id}}. {{name}}
+          {{id}}. {{name}}
 
-        <button data-burgerid="{{id}}" class="devourBurger">Devour it!</button>
+          <button data-id="{{id}}" value="1" class="devourBurger">Devour it!</button>
         </p>
-    </li>
-    {{/each}}
+      </li>
+    {{/unless}}  
+  {{/each}}
+</ul>
+
+<ul>
+  {{#each burgers}}
+    {{#if devoured}}
+      <li>
+        <p class="text-muted" id="devoured">
+          {{id}}. {{name}}
+        </p>
+      </li>
+    {{/if}}
+  {{/each}}
 </ul>
 
 <h2 class="text-danger">Make a burger!</h2>

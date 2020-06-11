@@ -18,4 +18,23 @@ $(function () {
             location.reload()
         })
     })
+
+    $(".devourBurger").on("click", function (event) {
+        let id = $(this).data("id")
+        let devoured = $(this).val()
+
+        let devouredState = {
+            devoured: devoured
+        }
+        
+        $.ajax("/api/burger/" + id, {
+            type: "PUT",
+            data: devouredState
+        })
+        .then(function() {
+            console.log("Burger devoured")
+
+            location.reload()
+        })
+    })
 })

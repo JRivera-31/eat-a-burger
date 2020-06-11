@@ -20,13 +20,16 @@ $(function () {
     })
 
     $(".devourBurger").on("click", function (event) {
+        // Assign the data values to variables
         let id = $(this).data("id")
         let devoured = $(this).val()
 
+        // Create devoured state
         let devouredState = {
             devoured: devoured
         }
         
+        // Call put request
         $.ajax("/api/burger/" + id, {
             type: "PUT",
             data: devouredState

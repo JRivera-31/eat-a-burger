@@ -62,15 +62,6 @@ const orm = {
     
           cb(result);
         });
-    },
-    deleteOne: function (table, conidtion, cb) {
-      let queryString = "DELETE FROM ?? WHERE (?)"
-      
-      connection.query(queryString, function (err, result) {
-        if (err) throw err
-
-        cb(result)
-      })
     }
 }
 

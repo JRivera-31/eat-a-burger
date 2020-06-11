@@ -4,6 +4,8 @@
 
 Fun little project that allows you to add a burger you would like to eat to the list and then devour it! (with your mouse). Disclosure: This project may make you hungry.
 
+![](./images/Eat-A-Burger.gif)
+
 ## Table of Contents
 -[Installation](#installation)
 

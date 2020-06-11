@@ -1,25 +1,26 @@
 <h1 class="text-danger text-center mt-5">Eat-A-Burger!</h1>
 
 <div class="text-center">
-<img src="burger.jpg" alt="burger" style="height: 250px; width:300px;">
+<img src="burger.png" alt="burger" style="height: 250px; width:300px;">
 
 <ul>
     {{#each burgers}}
     <li>
         <p class="text-danger font-weight-bold" id="readyToEat">
-        {{id}}. {{burger_name}}
+        {{id}}. {{name}}
 
-        <button data-burgerid = "{{id}}" class="devourBurger">Devour it!</button>
+        <button data-burgerid="{{id}}" class="devourBurger">Devour it!</button>
         </p>
     </li>
     {{/each}}
 </ul>
 
 <h2 class="text-danger">Make a burger!</h2>
-<form id="createburger" class="button-size">
-  <textarea type="text" name="burger" id="burgername"></textarea>
-  <br>
-  <button type="submit">Make it!</button>
+<form class="create-form">
+  <div class="form-group">
+    <input type="text" name="burger" id="burgername">
+    <button type="submit">Make it!</button>
+  </div>
 </form>
 
 </div>
